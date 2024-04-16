@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 namespace UniLab2 {
 
@@ -23,6 +23,7 @@ namespace UniLab2 {
 		MainForm(void)
 		{
 			InitializeComponent();
+
 			timer = gcnew System::Windows::Forms::Timer();
 			timer->Interval = 1000;
 			timer->Tick += gcnew System::EventHandler(this, &MainForm::UpdateTimer);
@@ -127,7 +128,7 @@ namespace UniLab2 {
 			this->nameLabel->Name = L"nameLabel";
 			this->nameLabel->Size = System::Drawing::Size(195, 20);
 			this->nameLabel->TabIndex = 0;
-			this->nameLabel->Text = L"Сортировка массивов";
+			this->nameLabel->Text = L"РЎРѕСЂС‚РёСЂРѕРІРєР° РјР°СЃСЃРёРІРѕРІ";
 			// 
 			// arrType1Btn
 			// 
@@ -169,7 +170,7 @@ namespace UniLab2 {
 			this->radixSortBtn->Name = L"radixSortBtn";
 			this->radixSortBtn->Size = System::Drawing::Size(93, 17);
 			this->radixSortBtn->TabIndex = 6;
-			this->radixSortBtn->Text = L"Поразрядная";
+			this->radixSortBtn->Text = L"РџРѕСЂР°Р·СЂСЏРґРЅР°СЏ";
 			this->radixSortBtn->UseVisualStyleBackColor = true;
 			// 
 			// insertionSortBtn
@@ -179,7 +180,7 @@ namespace UniLab2 {
 			this->insertionSortBtn->Name = L"insertionSortBtn";
 			this->insertionSortBtn->Size = System::Drawing::Size(81, 17);
 			this->insertionSortBtn->TabIndex = 7;
-			this->insertionSortBtn->Text = L"Вставками";
+			this->insertionSortBtn->Text = L"Р’СЃС‚Р°РІРєР°РјРё";
 			this->insertionSortBtn->UseVisualStyleBackColor = true;
 			// 
 			// bubbleSortBtn
@@ -189,7 +190,7 @@ namespace UniLab2 {
 			this->bubbleSortBtn->Name = L"bubbleSortBtn";
 			this->bubbleSortBtn->Size = System::Drawing::Size(94, 17);
 			this->bubbleSortBtn->TabIndex = 8;
-			this->bubbleSortBtn->Text = L"Пузырьковая";
+			this->bubbleSortBtn->Text = L"РџСѓР·С‹СЂСЊРєРѕРІР°СЏ";
 			this->bubbleSortBtn->UseVisualStyleBackColor = true;
 			// 
 			// shakerSortBtn
@@ -199,7 +200,7 @@ namespace UniLab2 {
 			this->shakerSortBtn->Name = L"shakerSortBtn";
 			this->shakerSortBtn->Size = System::Drawing::Size(64, 17);
 			this->shakerSortBtn->TabIndex = 9;
-			this->shakerSortBtn->Text = L"Шейкер";
+			this->shakerSortBtn->Text = L"РЁРµР№РєРµСЂ";
 			this->shakerSortBtn->UseVisualStyleBackColor = true;
 			// 
 			// quickSortBtn
@@ -209,7 +210,7 @@ namespace UniLab2 {
 			this->quickSortBtn->Name = L"quickSortBtn";
 			this->quickSortBtn->Size = System::Drawing::Size(69, 17);
 			this->quickSortBtn->TabIndex = 10;
-			this->quickSortBtn->Text = L"Быстрая";
+			this->quickSortBtn->Text = L"Р‘С‹СЃС‚СЂР°СЏ";
 			this->quickSortBtn->UseVisualStyleBackColor = true;
 			// 
 			// runBtn
@@ -221,7 +222,7 @@ namespace UniLab2 {
 			this->runBtn->Size = System::Drawing::Size(179, 54);
 			this->runBtn->TabIndex = 11;
 			this->runBtn->TabStop = false;
-			this->runBtn->Text = L"Запуск";
+			this->runBtn->Text = L"Р—Р°РїСѓСЃРє";
 			this->runBtn->UseVisualStyleBackColor = false;
 			this->runBtn->Click += gcnew System::EventHandler(this, &MainForm::runBtn_Click);
 			// 
@@ -234,7 +235,7 @@ namespace UniLab2 {
 			this->resetBtn->Size = System::Drawing::Size(179, 36);
 			this->resetBtn->TabIndex = 12;
 			this->resetBtn->TabStop = false;
-			this->resetBtn->Text = L"Сброс";
+			this->resetBtn->Text = L"РЎР±СЂРѕСЃ";
 			this->resetBtn->UseVisualStyleBackColor = false;
 			this->resetBtn->Click += gcnew System::EventHandler(this, &MainForm::resetBtn_Click);
 			// 
@@ -263,7 +264,7 @@ namespace UniLab2 {
 			this->groupBox5->Size = System::Drawing::Size(176, 91);
 			this->groupBox5->TabIndex = 0;
 			this->groupBox5->TabStop = false;
-			this->groupBox5->Text = L"Вариант массива";
+			this->groupBox5->Text = L"Р’Р°СЂРёР°РЅС‚ РјР°СЃСЃРёРІР°";
 			// 
 			// groupBox4
 			// 
@@ -277,7 +278,7 @@ namespace UniLab2 {
 			this->groupBox4->Size = System::Drawing::Size(176, 134);
 			this->groupBox4->TabIndex = 0;
 			this->groupBox4->TabStop = false;
-			this->groupBox4->Text = L"Вариант сортировки";
+			this->groupBox4->Text = L"Р’Р°СЂРёР°РЅС‚ СЃРѕСЂС‚РёСЂРѕРІРєРё";
 			// 
 			// testBtn
 			// 
@@ -289,7 +290,7 @@ namespace UniLab2 {
 			this->testBtn->Size = System::Drawing::Size(179, 23);
 			this->testBtn->TabIndex = 14;
 			this->testBtn->TabStop = false;
-			this->testBtn->Text = L"Проверка ошибок";
+			this->testBtn->Text = L"РџСЂРѕРІРµСЂРєР° РѕС€РёР±РѕРє";
 			this->testBtn->UseVisualStyleBackColor = false;
 			// 
 			// infoBtn
@@ -302,7 +303,7 @@ namespace UniLab2 {
 			this->infoBtn->Size = System::Drawing::Size(179, 23);
 			this->infoBtn->TabIndex = 13;
 			this->infoBtn->TabStop = false;
-			this->infoBtn->Text = L"Информация";
+			this->infoBtn->Text = L"РРЅС„РѕСЂРјР°С†РёСЏ";
 			this->infoBtn->UseVisualStyleBackColor = false;
 			this->infoBtn->Click += gcnew System::EventHandler(this, &MainForm::infoBtn_Click);
 			// 
@@ -313,7 +314,7 @@ namespace UniLab2 {
 			this->timerLabel->Name = L"timerLabel";
 			this->timerLabel->Size = System::Drawing::Size(170, 13);
 			this->timerLabel->TabIndex = 16;
-			this->timerLabel->Text = L"Время выполнения сортировки:";
+			this->timerLabel->Text = L"Р’СЂРµРјСЏ РІС‹РїРѕР»РЅРµРЅРёСЏ СЃРѕСЂС‚РёСЂРѕРІРєРё:";
 			// 
 			// panel1
 			// 
@@ -332,7 +333,7 @@ namespace UniLab2 {
 			this->inputLabel->Name = L"inputLabel";
 			this->inputLabel->Size = System::Drawing::Size(208, 26);
 			this->inputLabel->TabIndex = 0;
-			this->inputLabel->Text = L"Здесь будет отображаться выбранный \r\nвами неотсортированный массив";
+			this->inputLabel->Text = L"Р—РґРµСЃСЊ Р±СѓРґРµС‚ РѕС‚РѕР±СЂР°Р¶Р°С‚СЊСЃСЏ РІС‹Р±СЂР°РЅРЅС‹Р№ \r\nРІР°РјРё РЅРµРѕС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅРЅС‹Р№ РјР°СЃСЃРёРІ";
 			// 
 			// groupBox2
 			// 
@@ -342,7 +343,7 @@ namespace UniLab2 {
 			this->groupBox2->Size = System::Drawing::Size(236, 376);
 			this->groupBox2->TabIndex = 18;
 			this->groupBox2->TabStop = false;
-			this->groupBox2->Text = L"Входные данные";
+			this->groupBox2->Text = L"Р’С…РѕРґРЅС‹Рµ РґР°РЅРЅС‹Рµ";
 			// 
 			// groupBox3
 			// 
@@ -352,7 +353,7 @@ namespace UniLab2 {
 			this->groupBox3->Size = System::Drawing::Size(236, 376);
 			this->groupBox3->TabIndex = 19;
 			this->groupBox3->TabStop = false;
-			this->groupBox3->Text = L"Результат";
+			this->groupBox3->Text = L"Р РµР·СѓР»СЊС‚Р°С‚";
 			// 
 			// panel2
 			// 
@@ -371,7 +372,7 @@ namespace UniLab2 {
 			this->outputLabel->Name = L"outputLabel";
 			this->outputLabel->Size = System::Drawing::Size(208, 26);
 			this->outputLabel->TabIndex = 0;
-			this->outputLabel->Text = L"Здесь будет отображаться выбранный \r\nвами массив в отсортированном виде";
+			this->outputLabel->Text = L"Р—РґРµСЃСЊ Р±СѓРґРµС‚ РѕС‚РѕР±СЂР°Р¶Р°С‚СЊСЃСЏ РІС‹Р±СЂР°РЅРЅС‹Р№ \r\nРІР°РјРё РјР°СЃСЃРёРІ РІ РѕС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅРЅРѕРј РІРёРґРµ";
 			// 
 			// MainForm
 			// 
@@ -387,7 +388,7 @@ namespace UniLab2 {
 			this->Name = L"MainForm";
 			this->ShowIcon = false;
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
-			this->Text = L"Лабораторная работа №2 - Сортировка";
+			this->Text = L"Р›Р°Р±РѕСЂР°С‚РѕСЂРЅР°СЏ СЂР°Р±РѕС‚Р° в„–2 - РЎРѕСЂС‚РёСЂРѕРІРєР°";
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox5->ResumeLayout(false);
 			this->groupBox5->PerformLayout();
@@ -408,7 +409,7 @@ namespace UniLab2 {
 		private: void UpdateTimer(Object^ sender, EventArgs^ e)
 		{
 			TimeSpan elapsedTime = endTime - startTime;
-			timerLabel->Text = "Время выполнения сортировки: " + elapsedTime.ToString("mm\\:ss\\.ff");
+			timerLabel->Text = "Р’СЂРµРјСЏ РІС‹РїРѕР»РЅРµРЅРёСЏ СЃРѕСЂС‚РёСЂРѕРІРєРё: " + elapsedTime.ToString("mm\\:ss\\.ff");
 		}
 
 		private: void btnLocker() {
@@ -513,7 +514,7 @@ namespace UniLab2 {
 				}
 
 			}
-			
+
 			btnUnlocker();
 		}
 
@@ -554,7 +555,7 @@ namespace UniLab2 {
 			btnUnlocker();
 			endTime = System::DateTime::Now;
 			TimeSpan elapsedTime = endTime - startTime;
-			timerLabel->Text = "Время выполнения сортировки: " + elapsedTime.ToString("mm\\:ss\\.ff");
+			timerLabel->Text = "Р’СЂРµРјСЏ РІС‹РїРѕР»РЅРµРЅРёСЏ СЃРѕСЂС‚РёСЂРѕРІРєРё: " + elapsedTime.ToString("mm\\:ss\\.ff");
 		}
 
 		void insertionSort(array<long>^ arr) {
@@ -583,7 +584,7 @@ namespace UniLab2 {
 			btnUnlocker();
 			endTime = System::DateTime::Now;
 			TimeSpan elapsedTime = endTime - startTime;
-			timerLabel->Text = "Время выполнения сортировки: " + elapsedTime.ToString("mm\\:ss\\.ff");
+			timerLabel->Text = "Р’СЂРµРјСЏ РІС‹РїРѕР»РЅРµРЅРёСЏ СЃРѕСЂС‚РёСЂРѕРІРєРё: " + elapsedTime.ToString("mm\\:ss\\.ff");
 		}
 
 
@@ -612,7 +613,7 @@ namespace UniLab2 {
 			btnUnlocker();
 			endTime = System::DateTime::Now;
 			TimeSpan elapsedTime = endTime - startTime;
-			timerLabel->Text = "Время выполнения сортировки: " + elapsedTime.ToString("mm\\:ss\\.ff");
+			timerLabel->Text = "Р’СЂРµРјСЏ РІС‹РїРѕР»РЅРµРЅРёСЏ СЃРѕСЂС‚РёСЂРѕРІРєРё: " + elapsedTime.ToString("mm\\:ss\\.ff");
 		}
 
 		void shakerSort(array<long>^ arr) {
@@ -650,7 +651,7 @@ namespace UniLab2 {
 			btnUnlocker();
 			endTime = System::DateTime::Now;
 			TimeSpan elapsedTime = endTime - startTime;
-			timerLabel->Text = "Время выполнения сортировки: " + elapsedTime.ToString("mm\\:ss\\.ff");
+			timerLabel->Text = "Р’СЂРµРјСЏ РІС‹РїРѕР»РЅРµРЅРёСЏ СЃРѕСЂС‚РёСЂРѕРІРєРё: " + elapsedTime.ToString("mm\\:ss\\.ff");
 		}
 
 		void quickSort(array<long>^ arr, int low, int high) {
@@ -659,10 +660,11 @@ namespace UniLab2 {
 
 			if (low < high) {
 				int pi = partition(arr, low, high);
-				quickSort(arr, low, pi - 1);
+				quickSort(arr, low, pi - 1); // Р—РґРµСЃСЊ РїРµСЂРµРґР°РµС‚СЃСЏ high, Р° РЅРµ arr->Length - 1
 				quickSort(arr, pi + 1, high);
 			}
 			this->outputLabel->Text = "";
+
 			for (int i = 0; i < arr->Length; ++i) {
 				this->outputLabel->Text += arr[i].ToString() + " ";
 				if ((i + 1) % 6 == 0) {
@@ -673,8 +675,9 @@ namespace UniLab2 {
 			btnUnlocker();
 			endTime = System::DateTime::Now;
 			TimeSpan elapsedTime = endTime - startTime;
-			timerLabel->Text = "Время выполнения сортировки: " + elapsedTime.ToString("mm\\:ss\\.ff");
+			timerLabel->Text = "Р’СЂРµРјСЏ РІС‹РїРѕР»РЅРµРЅРёСЏ СЃРѕСЂС‚РёСЂРѕРІРєРё: " + elapsedTime.ToString("mm\\:ss\\.ff");
 		}
+
 
 		int partition(array<long>^ arr, int low, int high) {
 			long pivot = arr[high];
@@ -692,8 +695,6 @@ namespace UniLab2 {
 			arr[high] = temp;
 			return i + 1;
 		}
-
-
 
 		private: System::Void runBtn_Click(System::Object^ sender, System::EventArgs^ e) {
 
@@ -713,7 +714,7 @@ namespace UniLab2 {
 				quickSort(arr, 0, arr->Length - 1);
 			}
 			else {
-				MessageBox::Show("Выберите метод сортировки!", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
+				MessageBox::Show("Р’С‹Р±РµСЂРёС‚Рµ РјРµС‚РѕРґ СЃРѕСЂС‚РёСЂРѕРІРєРё!", "РћС€РёР±РєР°", MessageBoxButtons::OK, MessageBoxIcon::Error);
 				return;
 			}
 		}
@@ -729,14 +730,14 @@ namespace UniLab2 {
 			shakerSortBtn->Checked = false;
 			quickSortBtn->Checked = false;
 
-			timerLabel->Text = "Время выполнения сортиовки:";
-			outputLabel->Text = "Здесь будет отображаться выбранный\nвами массив в отсортированном виде";
-			inputLabel->Text = "Здесь будет отображаться выбранный\nвами неотсортированный массив";
+			timerLabel->Text = "Р’СЂРµРјСЏ РІС‹РїРѕР»РЅРµРЅРёСЏ СЃРѕСЂС‚РёРѕРІРєРё:";
+			outputLabel->Text = "Р—РґРµСЃСЊ Р±СѓРґРµС‚ РѕС‚РѕР±СЂР°Р¶Р°С‚СЊСЃСЏ РІС‹Р±СЂР°РЅРЅС‹Р№\nРІР°РјРё РјР°СЃСЃРёРІ РІ РѕС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅРЅРѕРј РІРёРґРµ";
+			inputLabel->Text = "Р—РґРµСЃСЊ Р±СѓРґРµС‚ РѕС‚РѕР±СЂР°Р¶Р°С‚СЊСЃСЏ РІС‹Р±СЂР°РЅРЅС‹Р№\nРІР°РјРё РЅРµРѕС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅРЅС‹Р№ РјР°СЃСЃРёРІ";
 
 			timer->Stop();
 		}
 		private: System::Void infoBtn_Click(System::Object^ sender, System::EventArgs^ e) {
-			MessageBox::Show("Работа с программой\r\n\r\nДля работы с программой:\r\n\r\n1. Выберите один из трёх вариантов массива и дождитесь его загрузки (после загрузки, он появется в окне \"Входные данные\").\r\n\r\n2. Выберите один из пяти видов сортировки массива.\r\n\r\n3. Нажмите на кнопку \"Запуск\" и дождитесь, пока отсортируется массив (после загрузки отсортированный массив появится в окне \"Результат\")\r\n\r\nДля повторного использования программы нажмите кнопку \"Сброс\" и повторие вышеперечисленные действия.", "Информация о работе программы", MessageBoxButtons::OK, MessageBoxIcon::Information);
+			MessageBox::Show("Р Р°Р±РѕС‚Р° СЃ РїСЂРѕРіСЂР°РјРјРѕР№\r\n\r\nР”Р»СЏ СЂР°Р±РѕС‚С‹ СЃ РїСЂРѕРіСЂР°РјРјРѕР№:\r\n\r\n1. Р’С‹Р±РµСЂРёС‚Рµ РѕРґРёРЅ РёР· С‚СЂС‘С… РІР°СЂРёР°РЅС‚РѕРІ РјР°СЃСЃРёРІР° Рё РґРѕР¶РґРёС‚РµСЃСЊ РµРіРѕ Р·Р°РіСЂСѓР·РєРё (РїРѕСЃР»Рµ Р·Р°РіСЂСѓР·РєРё, РѕРЅ РїРѕСЏРІРµС‚СЃСЏ РІ РѕРєРЅРµ \"Р’С…РѕРґРЅС‹Рµ РґР°РЅРЅС‹Рµ\").\r\n\r\n2. Р’С‹Р±РµСЂРёС‚Рµ РѕРґРёРЅ РёР· РїСЏС‚Рё РІРёРґРѕРІ СЃРѕСЂС‚РёСЂРѕРІРєРё РјР°СЃСЃРёРІР°.\r\n\r\n3. РќР°Р¶РјРёС‚Рµ РЅР° РєРЅРѕРїРєСѓ \"Р—Р°РїСѓСЃРє\" Рё РґРѕР¶РґРёС‚РµСЃСЊ, РїРѕРєР° РѕС‚СЃРѕСЂС‚РёСЂСѓРµС‚СЃСЏ РјР°СЃСЃРёРІ (РїРѕСЃР»Рµ Р·Р°РіСЂСѓР·РєРё РѕС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅРЅС‹Р№ РјР°СЃСЃРёРІ РїРѕСЏРІРёС‚СЃСЏ РІ РѕРєРЅРµ \"Р РµР·СѓР»СЊС‚Р°С‚\")\r\n\r\nР”Р»СЏ РїРѕРІС‚РѕСЂРЅРѕРіРѕ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ РїСЂРѕРіСЂР°РјРјС‹ РЅР°Р¶РјРёС‚Рµ РєРЅРѕРїРєСѓ \"РЎР±СЂРѕСЃ\" Рё РїРѕРІС‚РѕСЂРёРµ РІС‹С€РµРїРµСЂРµС‡РёСЃР»РµРЅРЅС‹Рµ РґРµР№СЃС‚РІРёСЏ.", "РРЅС„РѕСЂРјР°С†РёСЏ Рѕ СЂР°Р±РѕС‚Рµ РїСЂРѕРіСЂР°РјРјС‹", MessageBoxButtons::OK, MessageBoxIcon::Information);
 		}
 	};
 }
