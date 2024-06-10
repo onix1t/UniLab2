@@ -446,16 +446,17 @@ namespace UniLab2 {
 		this->outputLabel->Text = "";
 
 		arr = gcnew array<long>(length);
+		System::Text::StringBuilder^ sb = gcnew System::Text::StringBuilder();
+
 		for (int i = 0; i < length; i++) {
 			arr[i] = mass[i];
-		}
-
-		for (int i = 0; i < length; ++i) {
-			this->inputLabel->Text += mass[i].ToString() + " ";
+			sb->Append(mass[i].ToString() + " ");
 			if ((i + 1) % 6 == 0) {
-				this->inputLabel->Text += "\n";
+				sb->Append("\n");
 			}
 		}
+
+		this->inputLabel->Text = sb->ToString();
 		btnUnlocker();
 	}
 
@@ -481,7 +482,7 @@ namespace UniLab2 {
 	}
 
 	// -- [ Сортировки ] --
-		
+	    
 	// Сортировка Поразрядная
 	void radixSort(array<long>^ arr) {
 	    int n = arr->Length;
@@ -521,7 +522,7 @@ namespace UniLab2 {
 	        arr[j + 1] = key;
 	    }
 	}
-		
+	    
 	// Сортировка Пузырьковая
 	void bubbleSort(array<long>^ arr) {
 	    int n = arr->Length;
@@ -535,7 +536,7 @@ namespace UniLab2 {
 	        }
 	    }
 	}
-		
+	    
 	// Сорировка Шейкер
 	void shakerSort(array<long>^ arr) {
 	    int n = arr->Length;
