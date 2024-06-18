@@ -1,5 +1,7 @@
 ﻿#pragma once
 
+#include <iostream>
+
 namespace UniLab2 {
 
 	using namespace System;
@@ -9,6 +11,7 @@ namespace UniLab2 {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+
 
 	/// <summary>
 	/// Summary for MainForm
@@ -288,6 +291,8 @@ namespace UniLab2 {
 			this->testBtn->TabStop = false;
 			this->testBtn->Text = L"Проверка ошибок";
 			this->testBtn->UseVisualStyleBackColor = false;
+			this->testBtn->Enabled = true;
+			this->testBtn->Click += gcnew System::EventHandler(this, &MainForm::testBtn_Click);
 			// 
 			// infoBtn
 			// 
@@ -657,6 +662,153 @@ namespace UniLab2 {
 	// Кнопка открытия окна информации о программе
 	private: System::Void infoBtn_Click(System::Object^ sender, System::EventArgs^ e) {
 		MessageBox::Show("Работа с программой\r\n\r\nДля работы с программой:\r\n\r\n1. Выберите один из трёх вариантов массива и дождитесь его загрузки (после загрузки, он появется в окне \"Входные данные\").\r\n\r\n2. Выберите один из пяти видов сортировки массива.\r\n\r\n3. Нажмите на кнопку \"Запуск\" и дождитесь, пока отсортируется массив (после загрузки отсортированный массив появится в окне \"Результат\")\r\n\r\nДля повторного использования программы нажмите кнопку \"Сброс\" и повторие вышеперечисленные действия.", "Информация о работе программы", MessageBoxButtons::OK, MessageBoxIcon::Information);
+	}
+
+	private: System::Void testBtn_Click(System::Object^ sender, System::EventArgs^ e)
+	{
+		bool testRes = test1() + test2() + test3() + test4() + test5();
+		if (testRes == 0)
+		{
+			MessageBox::Show("Все тесты успешно пройдены.\r\n\r\n Программа работает корректно.", "Результаты тестирования", MessageBoxButtons::OK, MessageBoxIcon::Information);
+		} else{
+			MessageBox::Show("Тесты не пройдены.\r\n\r\n Программа работает не корректно.", "Результаты тестирования", MessageBoxButtons::OK, MessageBoxIcon::Error);
+		}
+	}
+		
+	// -- [ Тесты ] --
+	int test1()
+	{
+		array<long>^ arr = gcnew array<long> {1, 4, 3, 6, 5, 2};
+		array<long>^ arrRes = gcnew array<long> {1, 2, 3, 4, 5, 6};
+		
+		radixSort(arr);
+
+		bool arraysEqual = true;
+		for (int i = 0; i < arr->Length; ++i)
+		{
+			if (arr[i] != arrRes[i])
+			{
+				arraysEqual = false;
+				break;
+			}
+		}
+
+		if (arraysEqual)
+		{
+			return 0;
+		}
+		else
+		{
+			return 1;
+		}
+	}
+
+	int test2()
+	{
+		array<long>^ arr = gcnew array<long> {1, 4, 3, 6, 5, 2};
+		array<long>^ arrRes = gcnew array<long> {1, 2, 3, 4, 5, 6};
+		
+		insertionSort(arr);
+
+		bool arraysEqual = true;
+		for (int i = 0; i < arr->Length; ++i)
+		{
+			if (arr[i] != arrRes[i])
+			{
+				arraysEqual = false;
+				break;
+			}
+		}
+
+		if (arraysEqual)
+		{
+			return 0;
+		}
+		else
+		{
+			return 1;
+		}
+	}
+
+	int test3()
+	{
+		array<long>^ arr = gcnew array<long> {1, 4, 3, 6, 5, 2};
+		array<long>^ arrRes = gcnew array<long> {1, 2, 3, 4, 5, 6};
+		
+		bubbleSort(arr);
+
+		bool arraysEqual = true;
+		for (int i = 0; i < arr->Length; ++i)
+		{
+			if (arr[i] != arrRes[i])
+			{
+				arraysEqual = false;
+				break;
+			}
+		}
+
+		if (arraysEqual)
+		{
+			return 0;
+		}
+		else
+		{
+			return 1;
+		}
+	}
+
+	int test4()
+	{
+		array<long>^ arr = gcnew array<long> {1, 4, 3, 6, 5, 2};
+		array<long>^ arrRes = gcnew array<long> {1, 2, 3, 4, 5, 6};
+		
+		shakerSort(arr);
+
+		bool arraysEqual = true;
+		for (int i = 0; i < arr->Length; ++i)
+		{
+			if (arr[i] != arrRes[i])
+			{
+				arraysEqual = false;
+				break;
+			}
+		}
+
+		if (arraysEqual)
+		{
+			return 0;
+		}
+		else
+		{
+			return 1;
+		}
+	}
+
+	int test5()
+	{
+		array<long>^ arr = gcnew array<long> {1, 4, 3, 6, 5, 2};
+		array<long>^ arrRes = gcnew array<long> {1, 2, 3, 4, 5, 6};
+		
+		quickSort(arr);
+
+		bool arraysEqual = true;
+		for (int i = 0; i < arr->Length; ++i)
+		{
+			if (arr[i] != arrRes[i])
+			{
+				arraysEqual = false;
+				break;
+			}
+		}
+
+		if (arraysEqual)
+		{
+			return 0;
+		}
+		else
+		{
+			return 1;
+		}
 	}
 	};
 }
