@@ -519,7 +519,7 @@ namespace UniLab2 {
 	    int n = arr->Length;
 	    for (int i = 1; i < n; i++) {
 	        long key = arr[i];
-	        int j = i - 1;
+	        int j = i - 1;	
 	        while (j >= 0 && arr[j] > key) {
 	            arr[j + 1] = arr[j];
 	            j--;
@@ -528,7 +528,7 @@ namespace UniLab2 {
 	    }
 	}
 	    
-	// Сортировка Пузырьковая
+	// Сортировка Пузырьком
 	void bubbleSort(array<long>^ arr) {
 	    int n = arr->Length;
 	    for (int i = 0; i < n - 1; i++) {
@@ -676,6 +676,8 @@ namespace UniLab2 {
 	}
 		
 	// -- [ Тесты ] --
+
+	// 
 	int test1()
 	{
 		array<long>^ arr = gcnew array<long> {1, 4, 3, 6, 5, 2};
